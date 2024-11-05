@@ -1,0 +1,165 @@
+/*CUERPO DE LA PAGINA*/
+body {
+    background-color: rgb(218, 216, 216);
+    margin: 1vw 1vw; /* Márgenes */
+}
+
+/*Menu*/
+ul {
+    background-color: rgb(234, 234, 234);
+    position: sticky; /* menu estatico al desplazarse */
+    top: 0;
+    cursor:pointer;
+}
+
+ul {
+    list-style-type: none; /* sin viñetas*/
+    margin: 0;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.001);
+}
+
+
+li a{
+    font-family: "Pacifico", cursive;
+    font-size: 40px; /* tamaño letra*/
+    font-style: normal;
+}
+
+li a, li c, li d, li e {
+    color: rgb(0, 0, 0);
+    padding: 1px 50px; /* separacion de categorias*/
+    text-decoration: none;
+    display: block;
+}
+
+
+.categorias { /* volver horizontal categorias */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+li a:hover:not(.action),
+li c:hover:not(.action),
+li d:hover:not(.action),
+li e:hover:not(.action) {
+    opacity: 0.2; /* opacidad al pasar el mouse*/
+}
+
+
+ul > li:first-child {
+    margin-right: auto; 
+}
+
+
+.busqueda img {
+    height: 35px; 
+    width: auto;
+}
+
+
+/* TEXTO INICIO */
+
+.inicio{
+    background-color: rgb(206, 205, 205);
+    top: 0;
+    padding: 100px;
+
+}
+
+.inicio{
+    text-align: center; /* Texto centrado */
+    font-family: "Great Vibes", cursive;
+    font-size: 20px; /* tamaño letra*/
+
+}
+
+
+.texto-buscador{
+    display: flex;
+    align-items: center; 
+
+}
+
+.texto{
+    margin-left: 60px;
+    font-family: "Great Vibes", cursive;
+}
+
+.barrabuscar{
+    margin: 40px 2px; /* Márgenes */
+    margin-left: 450px;
+    width: 300px;
+}
+
+
+/* BOTONES */
+.boton1{
+    background-color: black;
+    border: 10px;
+    padding: 12px 32px;
+    text-align: center;
+    color: white;
+    cursor:pointer; /* para que aparezca la mano en el cursor*/
+    border-radius: 15px;
+    transition: opacity 0.2s;
+}
+
+.boton1:active {
+    opacity: 0.1; /* Hacer que el botón se transparente al hacer clic */
+}
+
+
+
+.boton2{
+    background-color: rgb(255, 106, 57);
+    margin-left: 450px;
+    border: 10px;
+    padding: 12px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    cursor:pointer; /* para que aparezca la mano en el cursor*/
+    border-radius: 5px;
+    transition: opacity 0.2s;
+}
+
+.boton2:active {
+    opacity: 0.1; /* Hacer que el botón se transparente al hacer clic */
+}
+
+
+/* FOTOS */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+
+}
